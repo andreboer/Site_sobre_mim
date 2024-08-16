@@ -1,0 +1,106 @@
+/* Body, para aplicar á pagina inteira */
+body {
+    color: white;
+    background-color: black;
+}
+
+/* Botões de Link */
+a {
+    color: white;
+    text-decoration: none;
+} 
+
+
+.link {
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.link::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right,rgba(73,16,143,1) 12%, rgba(70,5,116,1) 43%, rgba(52,3,78,0.773546918767507) 68%, rgba(0,0,0,0.773546918767507) 91%);
+    transition: 0.9s ease;
+    display: block;
+    z-index: -1;
+}
+
+.link:hover::before {
+    width: 9em;
+}
+
+
+/* Minha Foto */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgba(73,16,143,1);
+}
+
+.center {
+    text-align: center;
+}
+
+/* Textos sobre mim */
+h1 {
+    color: rgba(73,16,143,1);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Roda pé, com linkedin e github */
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2px;
+}
+
+footer p:hover {
+    color: rgba(73,16,143,1);
+}
+
+/*  Div container */
+.container {
+    padding: 0px 50px;
+}
